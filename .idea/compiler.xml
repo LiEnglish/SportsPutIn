@@ -8,10 +8,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="SportsPunchIn" />
+        <module name="SportsPutIn" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="SportsPunchIn" target="1.8" />
+      <module name="SportsPutIn" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
