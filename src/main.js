@@ -6,7 +6,7 @@ import store from './store'
 import './plugins/element.js'
 import VueRouter from "vue-router";
 import $ from 'jquery'
-import '/js/file.js'
+// import '/js/file.js'
 
 
 // //引入elementUI的css
