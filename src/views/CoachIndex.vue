@@ -54,7 +54,7 @@
                 <p>确认退出计划吗？费用概不退还？</p>
                 <div style="text-align: right">
                   <el-button size="mini" type="text" @click="visible = false">取消</el-button>
-                  <el-button type="primary" size="mini" @click="visible = false; deleteMyPEPlan(scope.row)">确定</el-button>
+                  <el-button type="primary" size="mini" @click="visible = false , deleteMyPEPlan(scope.row)">确定</el-button>
                 </div>
                 <el-button slot="reference" type="danger" plain size="small" style="margin-left: 15px">退出计划</el-button>
               </el-popover>
