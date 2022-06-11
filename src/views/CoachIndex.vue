@@ -1,100 +1,139 @@
 <template>
-  <!--  构建整个页面框架  -->
-  <el-container style="border: 1px solid #eee;text-align: center" >
-    <el-header class="el-header">
-        <h1 class="title">体育打卡系统</h1>
-        <el-button class="el-icon-s-tools" type="text" @click="exit" >退出登陆</el-button>
-    </el-header>
-
+  <div>
 
     <el-container>
-      <!--构建左侧菜单el-aside-->
-      <el-aside  style="width: 15%; background-color: rgb(238, 241, 246)" class="el-aside">
-        <!--左侧菜单内容-->
-        <el-menu :default-openeds="['1']" :default-active="'1'">
-          <el-menu-item index="1" @click="JumpCoachPEPlan"><i class="el-icon-menu"></i><span slot="title">锻炼计划管理</span></el-menu-item>
-          <el-menu-item index="2" @click="JumpCoachAccount"><i class="el-icon-setting"></i><span slot="title">账号管理</span></el-menu-item>
-        </el-menu>
-      </el-aside>
+
+      <el-table id="table"
+                :data="MyPEPlan"
+                border>
+        <el-table-column
+                prop="mypeid"
+                label="编号"
+                width="50px">
+        </el-table-column>
+        <el-table-column
+                prop="mypename"
+                label="锻炼名称"
+                width="150px">
+        </el-table-column>
+        <el-table-column
+                prop="mytimes"
+                label="计划时长"
+                width="120px">
+        </el-table-column>
+        <el-table-column
+                prop="mycoach"
+                label="教练"
+                width="120px">
+        </el-table-column>
+        <el-table-column
+                prop="price"
+                label="价格"
+                width="90px">
+        </el-table-column>
+        <el-table-column
+                prop="score"
+                label="得分"
+                width="160px">
+          <div class="block">
+            <el-rate v-model="value1" disabled="true"></el-rate>
+          </div>
+        </el-table-column>
+
+        <el-table-column
+                label="操作" style="width: 100px;">
+          <template slot-scope="scope" >
+            <div class="el-row--flex">
+              <el-button @click="JumpPunchIn" type="primary"  size="small">打卡</el-button>
+              <el-button type="primary" size="small" @click="open" style="margin-left: 15px">评价</el-button>
+
+              <el-popover
+                      placement="top"
+                      width="160"
+                      v-model="visible">
+                <p>确认退出计划吗？费用概不退还？</p>
+                <div style="text-align: right">
+                  <el-button size="mini" type="text" @click="visible = false">取消</el-button>
+                  <el-button type="primary" size="mini" @click="visible = false; deleteMyPEPlan(scope.row)">确定</el-button>
+                </div>
+                <el-button slot="reference" type="danger" plain size="small" style="margin-left: 15px">退出计划</el-button>
+              </el-popover>
+            </div>
 
 
-
-      <el-main >
-        <body>
-        <router-view></router-view>
-        </body>
-      </el-main>
+          </template>
+        </el-table-column>
+      </el-table>
 
     </el-container>
-  </el-container>
-
-
+    <!--  分页  -->
+    <el-pagination
+            background
+            layout="prev, pager, next"
+            :page-size="4"
+            :total="10"
+            style="margin-top: 10px;"
+            @current-chang="page">
+    </el-pagination>
+  </div>
 </template>
 
+<script >
+  export default {
+    name: "MyPEPlan",
+
+    methods: {
+
+      deleteMyPEPlan(row){
+        const _this = this
+        axios.delete('http://localhost:8888/MyPEPlan/deleteMyPEPlan/'+row.mypeid).then(function (){
+          _this.$alert('删除计划成功！','消息',{
+            confirmButtonText:'确定',
+            callback: action => {
+              type: 'info',
+                      window.location.reload()
+            }
+          })
+        })
+      },
+
+      // 跳转到传递参数页
+      JumpPunchIn(){
+        this.$router.push({
+          path:'/PunchIn'
+        })
+      }
+    },
+
+    data() {
+      return{
+        MyPEPlan: [
+          {
+            mypeid: '1',
+            mypename:'跑步',
+            mytimes:'三周',
+            mycoach:'李老师',
+            price:'20',
+            comment:''
+          },
+        ],
+      }
+    },
+
+    created() {
+      const _this = this
+      axios.get('http://localhost:8888/MyPEPlan/findmyAll').then(function (resp){
+        _this.MyPEPlan = resp.data
+      })
+    },
+
+  }
+
+</script>
+
+
+
 <style scoped>
-.el-header {
-  height: 60px;
-  background-color: #B3C0D1;
-  color: #333;
-  line-height: 60px;
-}
-
-.title{
-  text-align: center;
-  margin-top: auto;
-  margin-left: 50px;
-  display:inline-block;
-}
-
-.el-icon-s-tools{
-  display:inline-block;
-  float: right;
-  margin-top: 10px;
-  margin-right: 10px;
-}
-
-
-@media screen and (max-width: 991px) {
-
-
-}
 
 
 </style>
-
-<script>
-export default {
-
-  data() {
-
-  },
-  methods:{
-    exit(){
-      this.$confirm('确定要退出吗？', '提示', {
-        confirmButtonText: '确定',
-        cancelButtonText: '取消',
-        type: 'warning'
-      }).then(() => {
-        this.$router.push({
-          name:'login',
-        })
-      }).catch(() => {
-      });
-    },
-    JumpCoachPEPlan(){
-      this.$router.push({
-        name:'教练的计划',
-      })
-    },
-    JumpCoachAccount(){
-      this.$router.push({
-        name:'教练账号',
-      })
-    },
-
-    JumpLogin(){
-
-    },
-  }
-}
-</script>

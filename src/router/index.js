@@ -11,6 +11,11 @@ import Market from "@/views/Market";
 import CoachPEPlan from "@/views/CoachPEPlan";
 import UpdatePEPlan from "@/views/UpdatePEPlan";
 import CoachAccount from "@/views/CoachAccount";
+import AddUser from "@/views/AddUser";
+import user from "@/views/user";
+import Comment from "@/views/Comment";
+import AdminAccount from "@/views/AdminAccount";
+// import layout from "@/layout/Layout"
 
 
 
@@ -49,11 +54,11 @@ const routes = [
         name: "我的账号",
         component: MyAccount,
       },
-      {
-        path: "/AddPEPlan",
-        name:"添加锻炼计划",
-        component: AddPEPlan
-      },
+      // {
+      //   path: "/AddPEPlan",
+      //   name:"添加锻炼计划",
+      //   component: AddPEPlan
+      // },
       {
         path: "/PunchIn",
         name: "训练计划打卡",
@@ -77,6 +82,11 @@ const routes = [
     component: ()=>import('../views/CoachIndex.vue'),
     children:[
       {
+        path: "/AddPEPlan",
+        name:"添加锻炼计划",
+        component: AddPEPlan
+      },
+      {
         path: "/CoachPEPlan",
         name: "教练的计划",
         component: CoachPEPlan
@@ -86,8 +96,40 @@ const routes = [
         name: "教练账号",
         component: CoachAccount,
       },
+
     ]
   },
+
+  {
+    path: '/AdminIndex',
+    name: '管理员主页面',
+    component: () => import('../views/AdminIndex'),
+    // redirect: "/user",//当访问/时自动访问到home界面里面
+    children: [
+      //子路由,用来展示表格界面
+      {
+        path: "/AddUser",
+        name:"添加用户",
+        component: AddUser
+      },
+      {
+        path: "/user",
+        name:"用户管理",
+        component: user
+      },
+      {
+        path: "/Comment",
+        name: "评论管理",
+        component: Comment
+      },
+      {
+        path: "/AdminAccount",
+        name: "管理员账号",
+        component: AdminAccount,
+      },
+
+    ]
+  }
 
 
 ]

@@ -33,6 +33,7 @@
                             <el-radio-group  v-model="radioVal" @change="getRadioVal()">
                                 <el-radio   value="u_1" label="1" >普通用户</el-radio>
                                 <el-radio  value="u_2" label="2" >教练</el-radio>
+                                <el-radio  value="u_3" label="3" >管理员</el-radio>
                             </el-radio-group>
                         </el-form-item>
 
@@ -138,9 +139,13 @@
                                       this.$message({message: "登录成功" , type: "success"});
                                       this.$router.push("/Market");
                                     }
-                                    else {
+                                    if (this.radioVal === '2') {
                                       this.$message({message: "欢迎教练使用本系统" , type: "success"});
                                       this.$router.push("/CoachPEPlan");
+                                    }
+                                    else {
+                                        this.$message({message: "欢迎进入管理员后台" , type: "success"});
+                                        this.$router.push("/user");
                                     }
                                 } else {
                                     this.$message.error("账号密码不正确");

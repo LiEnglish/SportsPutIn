@@ -157,19 +157,64 @@
 2022-06-09 18:54:44.099  INFO 15492 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
 2022-06-09 18:54:44.456  INFO 15492 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
 2022-06-09 18:54:44.466  INFO 15492 --- [main] c.s.SportsPunchInApplication             : Started SportsPunchInApplication in 3.397 seconds (JVM running for 4.91)
-2022-06-09 23:28:06.236  INFO 18176 --- [main] c.s.SportsPunchInApplication             : Starting SportsPunchInApplication using Java 1.8.0_292 on DESKTOP-GGTVB5P with PID 18176 (H:\桌面文件\test\sport\SportsPutIn\target\classes started by Administrator in H:\桌面文件\test\sport\SportsPutIn)
-2022-06-09 23:28:06.239  INFO 18176 --- [main] c.s.SportsPunchInApplication             : No active profile set, falling back to default profiles: default
-2022-06-09 23:28:07.172  WARN 18176 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'myPEPlanMapper' and 'com.sportspunchin.mapper.MyPEPlanMapper' mapperInterface. Bean already defined with the same name!
-2022-06-09 23:28:07.172  WARN 18176 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'PEPlanMapper' and 'com.sportspunchin.mapper.PEPlanMapper' mapperInterface. Bean already defined with the same name!
-2022-06-09 23:28:07.173  WARN 18176 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userMapper' and 'com.sportspunchin.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
-2022-06-09 23:28:07.173  WARN 18176 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.sportspunchin.mapper]' package. Please check your configuration.
-2022-06-09 23:28:07.704  INFO 18176 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
-2022-06-09 23:28:07.713  INFO 18176 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-06-09 23:28:07.713  INFO 18176 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
-2022-06-09 23:28:07.814  INFO 18176 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-06-09 23:28:07.814  INFO 18176 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1521 ms
-2022-06-09 23:28:08.723  WARN 18176 --- [main] c.b.m.core.metadata.TableInfoHelper      : This primary key of "mypeid" is primitive !不建议如此请使用包装类 in Class: "com.sportspunchin.pojo.MyPEPlan"
-2022-06-09 23:28:08.772  WARN 18176 --- [main] c.b.m.core.metadata.TableInfoHelper      : This primary key of "peid" is primitive !不建议如此请使用包装类 in Class: "com.sportspunchin.pojo.PEPlan"
-2022-06-09 23:28:08.928  INFO 18176 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2022-06-09 23:28:09.237  INFO 18176 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
-2022-06-09 23:28:09.247  INFO 18176 --- [main] c.s.SportsPunchInApplication             : Started SportsPunchInApplication in 3.604 seconds (JVM running for 5.322)
+2022-06-09 23:49:57.909  INFO 9492 --- [main] c.s.SportsPunchInApplication             : Starting SportsPunchInApplication using Java 1.8.0_292 on DESKTOP-GGTVB5P with PID 9492 (H:\桌面文件\test\sport\SportsPutIn\target\classes started by Administrator in H:\桌面文件\test\sport\SportsPutIn)
+2022-06-09 23:49:57.918  INFO 9492 --- [main] c.s.SportsPunchInApplication             : No active profile set, falling back to default profiles: default
+2022-06-09 23:49:59.169  WARN 9492 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'myPEPlanMapper' and 'com.sportspunchin.mapper.MyPEPlanMapper' mapperInterface. Bean already defined with the same name!
+2022-06-09 23:49:59.169  WARN 9492 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'PEPlanMapper' and 'com.sportspunchin.mapper.PEPlanMapper' mapperInterface. Bean already defined with the same name!
+2022-06-09 23:49:59.169  WARN 9492 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userMapper' and 'com.sportspunchin.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2022-06-09 23:49:59.169  WARN 9492 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.sportspunchin.mapper]' package. Please check your configuration.
+2022-06-09 23:50:00.038  INFO 9492 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2022-06-09 23:50:00.049  INFO 9492 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-09 23:50:00.049  INFO 9492 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-06-09 23:50:00.188  INFO 9492 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-09 23:50:00.188  INFO 9492 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2038 ms
+2022-06-09 23:50:01.177  WARN 9492 --- [main] c.b.m.core.metadata.TableInfoHelper      : This primary key of "mypeid" is primitive !不建议如此请使用包装类 in Class: "com.sportspunchin.pojo.MyPEPlan"
+2022-06-09 23:50:01.228  WARN 9492 --- [main] c.b.m.core.metadata.TableInfoHelper      : This primary key of "peid" is primitive !不建议如此请使用包装类 in Class: "com.sportspunchin.pojo.PEPlan"
+2022-06-09 23:50:01.459  INFO 9492 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-06-09 23:50:01.808  INFO 9492 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2022-06-09 23:50:01.819  INFO 9492 --- [main] c.s.SportsPunchInApplication             : Started SportsPunchInApplication in 4.679 seconds (JVM running for 5.481)
+2022-06-09 23:49:57.909  INFO 9492 --- [main] c.s.SportsPunchInApplication             : Starting SportsPunchInApplication using Java 1.8.0_292 on DESKTOP-GGTVB5P with PID 9492 (H:\桌面文件\test\sport\SportsPutIn\target\classes started by Administrator in H:\桌面文件\test\sport\SportsPutIn)
+2022-06-09 23:49:57.918  INFO 9492 --- [main] c.s.SportsPunchInApplication             : No active profile set, falling back to default profiles: default
+2022-06-09 23:49:59.169  WARN 9492 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'myPEPlanMapper' and 'com.sportspunchin.mapper.MyPEPlanMapper' mapperInterface. Bean already defined with the same name!
+2022-06-09 23:49:59.169  WARN 9492 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'PEPlanMapper' and 'com.sportspunchin.mapper.PEPlanMapper' mapperInterface. Bean already defined with the same name!
+2022-06-09 23:49:59.169  WARN 9492 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userMapper' and 'com.sportspunchin.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2022-06-09 23:49:59.169  WARN 9492 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.sportspunchin.mapper]' package. Please check your configuration.
+2022-06-09 23:50:00.038  INFO 9492 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2022-06-09 23:50:00.049  INFO 9492 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-09 23:50:00.049  INFO 9492 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-06-09 23:50:00.188  INFO 9492 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-09 23:50:00.188  INFO 9492 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2038 ms
+2022-06-09 23:50:01.177  WARN 9492 --- [main] c.b.m.core.metadata.TableInfoHelper      : This primary key of "mypeid" is primitive !不建议如此请使用包装类 in Class: "com.sportspunchin.pojo.MyPEPlan"
+2022-06-09 23:50:01.228  WARN 9492 --- [main] c.b.m.core.metadata.TableInfoHelper      : This primary key of "peid" is primitive !不建议如此请使用包装类 in Class: "com.sportspunchin.pojo.PEPlan"
+2022-06-09 23:50:01.459  INFO 9492 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-06-09 23:50:01.808  INFO 9492 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2022-06-09 23:50:01.819  INFO 9492 --- [main] c.s.SportsPunchInApplication             : Started SportsPunchInApplication in 4.679 seconds (JVM running for 5.481)
+2022-06-10 08:38:46.387  INFO 11040 --- [main] c.s.SportsPunchInApplication             : Starting SportsPunchInApplication using Java 1.8.0_292 on DESKTOP-GGTVB5P with PID 11040 (H:\桌面文件\test\sport\SportsPutIn\target\classes started by Administrator in H:\桌面文件\test\sport\SportsPutIn)
+2022-06-10 08:38:46.405  INFO 11040 --- [main] c.s.SportsPunchInApplication             : No active profile set, falling back to default profiles: default
+2022-06-10 08:38:47.459  WARN 11040 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'myPEPlanMapper' and 'com.sportspunchin.mapper.MyPEPlanMapper' mapperInterface. Bean already defined with the same name!
+2022-06-10 08:38:47.460  WARN 11040 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'PEPlanMapper' and 'com.sportspunchin.mapper.PEPlanMapper' mapperInterface. Bean already defined with the same name!
+2022-06-10 08:38:47.460  WARN 11040 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userMapper' and 'com.sportspunchin.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2022-06-10 08:38:47.460  WARN 11040 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.sportspunchin.mapper]' package. Please check your configuration.
+2022-06-10 08:38:48.409  INFO 11040 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2022-06-10 08:38:48.422  INFO 11040 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-10 08:38:48.422  INFO 11040 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-06-10 08:38:48.534  INFO 11040 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-10 08:38:48.534  INFO 11040 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2032 ms
+2022-06-10 08:38:49.652  WARN 11040 --- [main] c.b.m.core.metadata.TableInfoHelper      : This primary key of "mypeid" is primitive !不建议如此请使用包装类 in Class: "com.sportspunchin.pojo.MyPEPlan"
+2022-06-10 08:38:49.700  WARN 11040 --- [main] c.b.m.core.metadata.TableInfoHelper      : This primary key of "peid" is primitive !不建议如此请使用包装类 in Class: "com.sportspunchin.pojo.PEPlan"
+2022-06-10 08:38:49.902  INFO 11040 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-06-10 08:38:50.163  INFO 11040 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2022-06-10 08:38:50.172  INFO 11040 --- [main] c.s.SportsPunchInApplication             : Started SportsPunchInApplication in 4.652 seconds (JVM running for 6.175)
+2022-06-10 08:46:26.418  INFO 11040 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-10 08:46:26.419  INFO 11040 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-10 08:46:26.421  INFO 11040 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-06-10 08:46:26.661  INFO 11040 --- [http-nio-8888-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-06-10 08:46:27.579  INFO 11040 --- [http-nio-8888-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-06-10 09:58:55.271  WARN 11040 --- [http-nio-8888-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `double` from String "ss": not a valid Double value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `double` from String "ss": not a valid Double value
+ at [Source: (PushbackInputStream); line: 1, column: 51] (through reference chain: com.sportspunchin.pojo.PEPlan["price"])]
+2022-06-10 09:59:03.166  WARN 11040 --- [http-nio-8888-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `double` from String "ss": not a valid Double value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `double` from String "ss": not a valid Double value
+ at [Source: (PushbackInputStream); line: 1, column: 51] (through reference chain: com.sportspunchin.pojo.PEPlan["price"])]
+2022-06-10 09:59:03.399  WARN 11040 --- [http-nio-8888-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `double` from String "ss": not a valid Double value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `double` from String "ss": not a valid Double value
+ at [Source: (PushbackInputStream); line: 1, column: 51] (through reference chain: com.sportspunchin.pojo.PEPlan["price"])]
+2022-06-10 09:59:03.703  WARN 11040 --- [http-nio-8888-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `double` from String "ss": not a valid Double value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `double` from String "ss": not a valid Double value
+ at [Source: (PushbackInputStream); line: 1, column: 51] (through reference chain: com.sportspunchin.pojo.PEPlan["price"])]

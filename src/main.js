@@ -8,15 +8,22 @@ import VueRouter from "vue-router";
 import $ from 'jquery'
 // import '/js/file.js'
 
-
-// //引入elementUI的css
+//
+// import ElementPlus from 'element-plus'
 // import 'element-plus/dist/index.css'
-// //引入中文
+//
 // import zhCn from 'element-plus/es/locale/lang/zh-cn'
+//
+//
+// 引入elementUI的css
+// import 'element-plus/dist/index.css'
+//引入中文
+import zhCn from 'element-plus/es/locale/lang/zh-cn'
 
 
 Vue.config.productionTip = false
 Vue.use(VueRouter)
+// Vue.use(ElementPlus)
 
 new Vue({
   router,
