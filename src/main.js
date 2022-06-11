@@ -18,7 +18,7 @@ import $ from 'jquery'
 // 引入elementUI的css
 // import 'element-plus/dist/index.css'
 //引入中文
-import zhCn from 'element-plus/es/locale/lang/zh-cn'
+// import zhCn from 'element-plus/es/locale/lang/zh-cn'
 
 
 Vue.config.productionTip = false

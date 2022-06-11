@@ -63,7 +63,7 @@
                     if (valid) {
                         // console.log(_this.ruleForm);
                         // alert("添加成功！");
-                        axios.post('http://localhost:8888/user/AddUser',this.ruleForm).then(function (resp){
+                        axios.post('http://localhost:8888/tuser/AddUser',this.ruleForm).then(function (resp){
                             // console.log(resp)
                             if(resp.data == 'success'){
                                 _this.$alert('添加用户成功！','OK',{

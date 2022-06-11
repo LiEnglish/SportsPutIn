@@ -32,14 +32,14 @@
                         width="120px">
                 </el-table-column>
 
-                <el-table-column
-                        prop="score"
-                        label="得分"
-                        width="160px">
-                    <div class="block">
-                        <el-rate v-model="value1" disabled="true"></el-rate>
-                    </div>
-                </el-table-column>
+<!--                <el-table-column-->
+<!--                        prop="score"-->
+<!--                        label="得分"-->
+<!--                        width="160px">-->
+<!--                    <div class="block">-->
+<!--                        <el-rate v-model="value1" disabled="true"></el-rate>-->
+<!--                    </div>-->
+<!--                </el-table-column>-->
 
                 <el-table-column
                         label="操作" style="width: 100px;">
@@ -106,7 +106,7 @@
 
             data() {
                 return {
-                    comment: [
+                    Comment: [
                         {
                             comid: '1',
                             username: 'zhangsan',
@@ -121,7 +121,7 @@
             created() {
                 const _this = this
                 axios.get('http://localhost:8888/comment/findmyAllcomment').then(function (resp) {
-                    _this.comment = resp.data
+                    _this.Comment = resp.data
                 })
             },
 

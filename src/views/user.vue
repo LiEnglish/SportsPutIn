@@ -88,7 +88,7 @@
 
             deleteuser(row) {
                 const _this = this
-                axios.delete('http://localhost:8888/user/deleteuser/' + row.id).then(function () {
+                axios.delete('http://localhost:8888/tuser/deleteuser/' + row.id).then(function () {
                     _this.$alert('删除用户成功！', '消息', {
                         confirmButtonText: '确定',
                         callback: action => {
@@ -130,7 +130,7 @@
 
             created() {
                 const _this = this
-                axios.get('http://localhost:8888/user/findAlluser').then(function (resp) {
+                axios.get('http://localhost:8888/tuser/findAlluser').then(function (resp) {
                     _this.user = resp.data
                 })
             },
