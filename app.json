@@ -1,0 +1,44 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/sport/sport",
+    "pages/list/list",
+    "pages/addcl/addcl",
+    "pages/my/my",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/sport/sport",
+      "text": "课程",
+      "iconPath": "./icon/sp.jpg",
+      "selectedIconPath": "./icon/sp.jpg"
+
+    },
+    {
+      "pagePath": "pages/addcl/addcl",
+      "text": "添加",
+      "iconPath": "./icon/ad.jpg",
+      "selectedIconPath": "./icon/ad.jpg"
+      
+    },
+    {
+      "pagePath": "pages/my/my",
+      "text": "我的",
+      "iconPath": "./icon/my.jpg",
+      "selectedIconPath": "./icon/my.jpg"
+      
+    }
+  ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+
+}

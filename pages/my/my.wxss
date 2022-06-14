@@ -1,0 +1,61 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #aaa;
+}
+
+.userinfo-avatar {
+  overflow: hidden;
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.container{
+  height: 250px;
+}
+
+/* .caidan{
+  background-color: lightskyblue;
+  height: 300px;
+} */
+/*用户列表选项样式*/
+.userItemListView{
+  background:#fff;
+  padding:0 50rpx;
+  margin:24rpx 0;
+}
+.userItemListView > view{
+  height:88rpx;
+  line-height: 88rpx;
+  border-bottom: 1rpx solid #f1f1f1;
+  position:relative;
+}
+.userItemListView > view:last-child{
+  border:none;
+}
+.arrow{
+  width: 16rpx;
+  height:16rpx;
+  border-top:4rpx solid #999;
+  border-right: 4rpx solid #999;
+  /*旋转45度*/
+  transform:rotate(45deg);
+  /*调整位置*/
+  position:absolute;
+  right:30rpx;
+  top:38rpx;
+}
+.userItemListView text{
+  font-size: 30rpx;
+}
+
+
+
+/* .usermotto {
+  margin-top: 200px;
+  background-color: lightpink;
+} */

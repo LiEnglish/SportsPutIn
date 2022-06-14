@@ -1,0 +1,49 @@
+/* pages/addcl/addcl.wxss */
+/* .page-body view{
+width: 390px;
+height: 60px;
+text-align: center;
+line-height: 70px;
+} */
+
+.weui-cells__title{
+ width: 390px;
+ height: 40px;
+ text-align: center;
+ line-height: 40px;
+ background-color: rgb(243, 244, 245);
+}
+
+.weui-input{
+  width: 390px;
+  height: 40px;
+  text-align: center;
+  border-width: 3px;
+  border-color: darkgrey;
+}
+
+button{
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+}
+.button-sp-area{
+  margin: 0 auto;
+  width: 35%;
+}
+.mini-btn{
+  margin-right: 10rpx;
+}
+
+/* 
+.addclass view:nth-child(1){
+background-color: aliceblue;
+}
+.addclass view:nth-child(2){
+  background-color: aqua;
+}
+.addclass view:nth-child(3){
+ background-color: azure; 
+}
+.addclass view:nth-child(4){
+  background-color: blue;
+} */

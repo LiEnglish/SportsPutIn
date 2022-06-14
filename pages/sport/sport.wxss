@@ -1,0 +1,10 @@
+/* pages/sport/sport.wxss */
+.slide-image{  
+  display: inline;
+}
+.textindex{
+  position: absolute;
+  top :20px;
+  color: red;
+}
+
