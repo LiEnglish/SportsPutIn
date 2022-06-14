@@ -111,16 +111,18 @@
                 this.$router.push({
                     path: '/AddUser'
                 })
-            },
+            }
+        },
+
 
             data() {
                 return {
                     user: [
                         {
                             id: '1',
-                            name: 'lisi',
+                            username: 'lisi',
                             password: '0002',
-                            type: 'coach',
+                            type: 'coach'
                             // price:'20',
                             // comment:''
                         },
@@ -136,7 +138,8 @@
             },
 
         }
-    }
+
+
 
 </script>
 

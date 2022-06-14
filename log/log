@@ -285,8 +285,43 @@
 2022-06-11 20:02:08.439  INFO 3736 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
 2022-06-11 20:02:08.629  INFO 3736 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
 2022-06-11 20:02:08.629  INFO 3736 --- [main] c.s.SportsPunchInApplication             : Started SportsPunchInApplication in 3.144 seconds (JVM running for 3.572)
-2022-06-11 20:13:22.345  INFO 3736 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-06-11 20:13:22.345  INFO 3736 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-06-11 20:13:22.345  INFO 3736 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2022-06-11 20:13:22.702  INFO 3736 --- [http-nio-8888-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-06-11 20:13:24.413  INFO 3736 --- [http-nio-8888-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-06-11 20:45:25.494  INFO 21196 --- [main] c.s.SportsPunchInApplication             : Starting SportsPunchInApplication using Java 1.8.0_292 on DESKTOP-GGTVB5P with PID 21196 (H:\桌面文件\test\sport\SportsPutIn\target\classes started by Administrator in H:\桌面文件\test\sport\SportsPutIn)
+2022-06-11 20:45:25.494  INFO 21196 --- [main] c.s.SportsPunchInApplication             : No active profile set, falling back to default profiles: default
+2022-06-11 20:45:26.184  WARN 21196 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'commentMapper' and 'com.sportspunchin.mapper.CommentMapper' mapperInterface. Bean already defined with the same name!
+2022-06-11 20:45:26.184  WARN 21196 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'myPEPlanMapper' and 'com.sportspunchin.mapper.MyPEPlanMapper' mapperInterface. Bean already defined with the same name!
+2022-06-11 20:45:26.184  WARN 21196 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'PEPlanMapper' and 'com.sportspunchin.mapper.PEPlanMapper' mapperInterface. Bean already defined with the same name!
+2022-06-11 20:45:26.184  WARN 21196 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'TUserMapper' and 'com.sportspunchin.mapper.TUserMapper' mapperInterface. Bean already defined with the same name!
+2022-06-11 20:45:26.184  WARN 21196 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userMapper' and 'com.sportspunchin.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2022-06-11 20:45:26.184  WARN 21196 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.sportspunchin.mapper]' package. Please check your configuration.
+2022-06-11 20:45:27.034  INFO 21196 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2022-06-11 20:45:27.044  INFO 21196 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-11 20:45:27.044  INFO 21196 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-06-11 20:45:27.164  INFO 21196 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-11 20:45:27.164  INFO 21196 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1600 ms
+2022-06-11 20:45:28.074  WARN 21196 --- [main] c.b.m.core.metadata.TableInfoHelper      : This primary key of "comid" is primitive !不建议如此请使用包装类 in Class: "com.sportspunchin.pojo.Comment"
+2022-06-11 20:45:28.124  WARN 21196 --- [main] c.b.m.core.metadata.TableInfoHelper      : This primary key of "mypeid" is primitive !不建议如此请使用包装类 in Class: "com.sportspunchin.pojo.MyPEPlan"
+2022-06-11 20:45:28.144  WARN 21196 --- [main] c.b.m.core.metadata.TableInfoHelper      : This primary key of "peid" is primitive !不建议如此请使用包装类 in Class: "com.sportspunchin.pojo.PEPlan"
+2022-06-11 20:45:28.164  WARN 21196 --- [main] c.b.m.core.metadata.TableInfoHelper      : This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.sportspunchin.pojo.TUser"
+2022-06-11 20:45:28.294  INFO 21196 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-06-11 20:45:28.474  INFO 21196 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2022-06-11 20:45:28.474  INFO 21196 --- [main] c.s.SportsPunchInApplication             : Started SportsPunchInApplication in 3.392 seconds (JVM running for 3.958)
+2022-06-11 20:46:38.482  INFO 3836 --- [main] c.s.SportsPunchInApplication             : Starting SportsPunchInApplication using Java 1.8.0_292 on DESKTOP-GGTVB5P with PID 3836 (H:\桌面文件\test\sport\SportsPutIn\target\classes started by Administrator in H:\桌面文件\test\sport\SportsPutIn)
+2022-06-11 20:46:38.482  INFO 3836 --- [main] c.s.SportsPunchInApplication             : No active profile set, falling back to default profiles: default
+2022-06-11 20:46:39.172  WARN 3836 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'commentMapper' and 'com.sportspunchin.mapper.CommentMapper' mapperInterface. Bean already defined with the same name!
+2022-06-11 20:46:39.172  WARN 3836 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'myPEPlanMapper' and 'com.sportspunchin.mapper.MyPEPlanMapper' mapperInterface. Bean already defined with the same name!
+2022-06-11 20:46:39.172  WARN 3836 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'PEPlanMapper' and 'com.sportspunchin.mapper.PEPlanMapper' mapperInterface. Bean already defined with the same name!
+2022-06-11 20:46:39.172  WARN 3836 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'TUserMapper' and 'com.sportspunchin.mapper.TUserMapper' mapperInterface. Bean already defined with the same name!
+2022-06-11 20:46:39.172  WARN 3836 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userMapper' and 'com.sportspunchin.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2022-06-11 20:46:39.172  WARN 3836 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.sportspunchin.mapper]' package. Please check your configuration.
+2022-06-11 20:46:39.862  INFO 3836 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2022-06-11 20:46:39.862  INFO 3836 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-11 20:46:39.862  INFO 3836 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-06-11 20:46:39.932  INFO 3836 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-11 20:46:39.932  INFO 3836 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1400 ms
+2022-06-11 20:46:40.852  WARN 3836 --- [main] c.b.m.core.metadata.TableInfoHelper      : This primary key of "comid" is primitive !不建议如此请使用包装类 in Class: "com.sportspunchin.pojo.Comment"
+2022-06-11 20:46:40.902  WARN 3836 --- [main] c.b.m.core.metadata.TableInfoHelper      : This primary key of "mypeid" is primitive !不建议如此请使用包装类 in Class: "com.sportspunchin.pojo.MyPEPlan"
+2022-06-11 20:46:40.922  WARN 3836 --- [main] c.b.m.core.metadata.TableInfoHelper      : This primary key of "peid" is primitive !不建议如此请使用包装类 in Class: "com.sportspunchin.pojo.PEPlan"
+2022-06-11 20:46:40.942  WARN 3836 --- [main] c.b.m.core.metadata.TableInfoHelper      : This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.sportspunchin.pojo.TUser"
+2022-06-11 20:46:41.082  INFO 3836 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-06-11 20:46:41.252  INFO 3836 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2022-06-11 20:46:41.262  INFO 3836 --- [main] c.s.SportsPunchInApplication             : Started SportsPunchInApplication in 3.191 seconds (JVM running for 3.598)

@@ -95,6 +95,7 @@
                     })
                 })
             },
+        },
 
             //     // 跳转到传递参数页
             //     JumpPunchIn(){
@@ -112,7 +113,7 @@
                             username: 'zhangsan',
                             comclass: '李教练',
                             comcoach: '跑步',
-                            comments: '这个课程不错。',
+                            comments: '这个课程不错。'
                         },
                     ],
                 }
@@ -126,7 +127,7 @@
             },
 
         }
-    }
+
 
 </script>
 
